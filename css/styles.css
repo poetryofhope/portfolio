@@ -1,0 +1,224 @@
+/*
+  Brand Colors
+  ------------
+  Primary:   #ac2b37  — Nav bar background, section headers, footer background
+  Secondary: #A8AAAD  — Borders, secondary/muted text
+  White:     #ffffff  — Text on colored backgrounds, card backgrounds
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ac2b37;
+  color: #ffffff;
+  padding: 16px 32px;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  height: 50px;
+  display: block;
+}
+
+.navbar-title h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 32px;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+.hero-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #A8AAAD;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-text h2 {
+  color: #ac2b37;
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.hero-role {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333333;
+}
+
+.hero-bio {
+  color: #555555;
+}
+
+/* ---------- Course Description Section ---------- */
+
+.course-description {
+  padding: 32px;
+}
+
+.description-card {
+  background-color: #ffffff;
+  border-left: 6px solid #ac2b37;
+  border-top: 1px solid #A8AAAD;
+  border-right: 1px solid #A8AAAD;
+  border-bottom: 1px solid #A8AAAD;
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.description-card h2 {
+  color: #ac2b37;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+}
+
+.description-card p {
+  margin-bottom: 12px;
+  color: #333333;
+}
+
+.description-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Resources Section ---------- */
+
+.resources {
+  padding: 32px;
+}
+
+.resources-heading {
+  color: #ac2b37;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.resources-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resource-card {
+  flex: 1 1 250px;
+  max-width: 320px;
+  background-color: #ffffff;
+  border: 1px solid #A8AAAD;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.resource-card h3 {
+  color: #ac2b37;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.resource-card p {
+  color: #555555;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.resource-link {
+  display: inline-block;
+  color: #ac2b37;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #ac2b37;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.resource-link:hover {
+  background-color: #ac2b37;
+  color: #ffffff;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background-color: #ac2b37;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 32px;
+}
+
+.site-footer p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive Breakpoint: 760px ---------- */
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navbar-title h1 {
+    text-align: left;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .resources-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource-card {
+    width: 100%;
+  }
+}
